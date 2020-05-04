@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+#title {
+  font-size: larger;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+#main {
+  display:table;
+  margin:0 auto;
+}
