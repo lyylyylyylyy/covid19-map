@@ -21,6 +21,7 @@ class Map extends Component{
 
     componentDidMount() {
         //var data = [];
+
         var myChart = echarts.init(document.getElementById("main"));
         fetch('https://lab.isaaclin.cn/nCoV/api/area?lang=en')
             .then(function(response) {
@@ -75,6 +76,7 @@ class Map extends Component{
                     top: 'top'
                 },
                 tooltip: {
+                    
                      trigger: 'item',
                      formatter: function (params) {
                          console.log(params)
@@ -92,7 +94,7 @@ class Map extends Component{
             
                 visualMap: {
                     min: 0,
-                    max: 1300000,
+                    max: 1600000,
                     text: ['High', 'Low'],
                     realtime: false,
                     calculable: true,
@@ -320,7 +322,7 @@ class Map extends Component{
     }
     render() {
         return(
-                <div id="main" style={{width: 800, height: 600}}></div>
+                <div id="main" style={{width: 600, height: 300}}></div>
         )
     }
 }
