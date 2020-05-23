@@ -2,7 +2,7 @@
 #root {
   width: 140vh;
   height: 100vh;
-  background-color: azure;
+  background-color:rgb(54, 48, 48);
 }
 
 .App {
@@ -49,20 +49,5 @@
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
   line-height: 150%;
-}
-
-#main {
-  display:table;
-  margin:0 auto;
-}
-
-.data1 {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  font-size: 200%;
-  text-align: center;
-  color: red;
-  line-height: 150%;
-  background-attachment: fixed;
 }
 

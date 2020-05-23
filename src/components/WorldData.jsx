@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import './style.css'
 
 class WorldData extends Component {
     constructor(props) {
@@ -22,10 +23,10 @@ class WorldData extends Component {
     }
     render() {
         return (
-            <div>
-                <span>世界新冠肺炎确诊人数：{this.state.confirmed}  </span>
-                <span>世界新冠肺炎死亡人数：{this.state.death}  </span>
-                <span>国家和地区数：188</span>
+            <div className="world-data">
+                <div id="data1">全球新冠肺炎确诊人数：<span>{this.state.confirmed}</span></div>
+                <div id="data2">全球新冠肺炎死亡人数：<span>{this.state.death}</span>  </div>
+                <div id="data3">国家和地区数：<span>188</span></div>
             </div>
         )
     }

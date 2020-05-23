@@ -3,6 +3,7 @@ import echarts from 'echarts/lib/echarts';
 import world from 'echarts/map/json/world';
 import 'echarts/map/js/world';
 import '../App.css';
+import './style.css';
 echarts.registerMap('world', world);
 
 
@@ -99,7 +100,7 @@ class Map extends Component{
                     realtime: false,
                     calculable: true,
                     inRange: {
-                        color: ['rgb(255,222,173)', 'rgb(255,215,0)','rgb(255,114,86)'],
+                        color: ['rgb(238, 238, 0)', 'rgb(255,130,71)','red'],
                         
                     }
                 },
@@ -322,7 +323,7 @@ class Map extends Component{
     }
     render() {
         return(
-                <div id="main" style={{width: 600, height: 300}}></div>
+                <div id="main"></div>
         )
     }
 }
