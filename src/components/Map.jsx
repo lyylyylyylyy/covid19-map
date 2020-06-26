@@ -95,12 +95,12 @@ class Map extends Component{
             
                 visualMap: {
                     min: 0,
-                    max: 1600000,
+                    max: 4000000,
                     text: ['High', 'Low'],
                     realtime: false,
                     calculable: true,
                     inRange: {
-                        color: ['rgb(238, 238, 0)', 'rgb(255,130,71)','red'],
+                        color: ['rgb(229, 152, 102)', 'rgb(160, 64, 0)','rgb(110, 44, 0)'],
                         
                     }
                 },
